@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface PostModalProps {
   postKey: 'narayana' | 'taobao' | 'mpesa';
@@ -10,7 +11,7 @@ function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa') {
     case 'narayana':
       return (
         <>
-          <img src="/stock/narayana-health.jpg" alt="Narayana Health" className="w-full rounded-md mb-4 mt-10" />
+          <Image src="/stock/narayana-health.jpg" alt="Narayana Health" width={800} height={400} className="w-full rounded-md mb-4 mt-10" />
           <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
             <span role="img" aria-label="diamond">🔷</span> Narayana Health
           </h2>
@@ -20,7 +21,7 @@ function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa') {
           </div>
           <h3 className="text-lg font-semibold mt-4 mb-1">💡 What’s the story?</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            Founded by heart surgeon Dr. Devi Shetty, Narayana Health is a chain of Indian hospitals that delivers world-class cardiac surgeries at ultra-low costs. It's not just a hospital, it’s a lesson in operational brilliance. By combining scale, process discipline, and smart pricing, they have figured out how to treat millions without breaking the system or the patient.
+            Founded by heart surgeon Dr. Devi Shetty, Narayana Health is a chain of Indian hospitals that delivers world-class cardiac surgeries at ultra-low costs. It&apos;s not just a hospital, it&apos;s a lesson in operational brilliance. By combining scale, process discipline, and smart pricing, they have figured out how to treat millions without breaking the system or the patient.
           </p>
           <h3 className="text-lg font-semibold mt-4 mb-1">🚀 Why it’s a standout</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
@@ -35,18 +36,18 @@ function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa') {
           </ul>
           <h3 className="text-lg font-semibold mt-4 mb-1">🔑 Key Learnings (Aimaan’s POV)</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            Narayana flipped how I think about cost: It’s not the barrier, it’s the unlock. They have shown that with smart systems thinking, you can scale affordable care without cutting corners. It made me rethink public sector constraints, not as a money problem, but as a design problem.
+            Narayana flipped how I think about cost: It&apos;s not the barrier, it&apos;s the unlock. They have shown that with smart systems thinking, you can scale affordable care without cutting corners. It made me rethink public sector constraints, not as a money problem, but as a design problem.
           </p>
           <h3 className="text-lg font-semibold mt-4 mb-1">🌍 Adoption Potential</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            This model has legs in Nigeria, Bangladesh, and even underserved parts of the U.S. Any place with young populations, high disease burdens, and weak insurance coverage. Pair it with telemedicine, and you’ve got a game plan for reaching the last mile.
+            This model has legs in Nigeria, Bangladesh, and even underserved parts of the U.S. Any place with young populations, high disease burdens, and weak insurance coverage. Pair it with telemedicine, and you&apos;ve got a game plan for reaching the last mile.
           </p>
         </>
       );
     case 'taobao':
       return (
         <>
-          <img src="/stock/taobao-village.jpg" alt="Tao Bao Villages" className="w-full rounded-md mb-4 mt-10" />
+          <Image src="/stock/taobao-village.jpg" alt="Tao Bao Villages" width={800} height={400} className="w-full rounded-md mb-4 mt-10" />
           <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
             <span role="img" aria-label="village">🏘️</span> Tao Bao Villages
           </h2>
@@ -60,7 +61,7 @@ function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa') {
           </p>
           <h3 className="text-lg font-semibold mt-4 mb-1">🚀 Why it’s innovative</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            Instead of moving people to cities for jobs, Alibaba flipped the model and brought digital jobs to the people. This wasn’t philanthropy, it was platform-building! Think: digital literacy, micro-loans, logistics, and payments all working together to create economic inclusion at scale.
+            Instead of moving people to cities for jobs, Alibaba flipped the model and brought digital jobs to the people. This wasn&apos;t philanthropy, it was platform-building! Think: digital literacy, micro-loans, logistics, and payments all working together to create economic inclusion at scale.
           </p>
           <h3 className="text-lg font-semibold mt-4 mb-1">🛠️ Playbook Breakdown</h3>
           <ul className="list-disc pl-6 text-sm text-gray-700 dark:text-gray-300 space-y-1">
@@ -71,7 +72,7 @@ function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa') {
           </ul>
           <h3 className="text-lg font-semibold mt-4 mb-1">🔑 Key Learnings (Aimaan’s POV)</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            What blew me away is how Tao Bao Villages turned digital equity into infrastructure. It is not just about giving people internet, it’s about building a repeatable ecosystem that unlocks economic agency. It made me rethink inclusion as not just as a fairness issue, but as a growth strategy.
+            What blew me away is how Tao Bao Villages turned digital equity into infrastructure. It is not just about giving people internet, it&apos;s about building a repeatable ecosystem that unlocks economic agency. It made me rethink inclusion as not just as a fairness issue, but as a growth strategy.
           </p>
           <h3 className="text-lg font-semibold mt-4 mb-1">🌍 Adoption Potential</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
@@ -82,7 +83,7 @@ function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa') {
     case 'mpesa':
       return (
         <>
-          <img src="/stock/mpesa.jpg" alt="M-Pesa" className="w-full rounded-md mb-4 mt-10" />
+          <Image src="/stock/mpesa.jpg" alt="M-Pesa" width={800} height={400} className="w-full rounded-md mb-4 mt-10" />
           <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
             <span role="img" aria-label="diamond">📲</span> M-Pesa
           </h2>
@@ -92,7 +93,7 @@ function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa') {
           </div>
           <h3 className="text-lg font-semibold mt-4 mb-1">💡 What’s the story?</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            M-Pesa flipped the financial system on its head in Kenya. It let people send and receive money over SMS, no bank account or internet needed. What started as a simple mobile money service is now deeply woven into Kenya’s economy, powering everything from daily transactions to business loans.
+            M-Pesa flipped the financial system on its head in Kenya. It let people send and receive money over SMS, no bank account or internet needed. What started as a simple mobile money service is now deeply woven into Kenya&apos;s economy, powering everything from daily transactions to business loans.
           </p>
           <h3 className="text-lg font-semibold mt-4 mb-1">🚀 Why it’s innovative</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
@@ -107,11 +108,11 @@ function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa') {
           </ul>
           <h3 className="text-lg font-semibold mt-4 mb-1">🔑 Key Learnings (Aimaan’s POV)</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            M-Pesa made me rethink what fintech really means. It is not just about flashy apps, it’s about building something people trust and actually use. They nailed product-market fit by grounding everything in local behaviors and needs.
+            M-Pesa made me rethink what fintech really means. It is not just about flashy apps, it&apos;s about building something people trust and actually use. They nailed product-market fit by grounding everything in local behaviors and needs.
           </p>
           <h3 className="text-lg font-semibold mt-4 mb-1">🌍 Adoption Potential</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            Places like Pakistan, Haiti, or underserved regions facing institutional gaps where formal banking is limited or mistrusted could benefit hugely. M-Pesa’s model is also a powerful blueprint for building inclusive digital public infrastructure from the ground up.
+            Places like Pakistan, Haiti, or underserved regions facing institutional gaps where formal banking is limited or mistrusted could benefit hugely. M-Pesa&apos;s model is also a powerful blueprint for building inclusive digital public infrastructure from the ground up.
           </p>
         </>
       );

@@ -23,7 +23,7 @@ export default function Home() {
         </div>
         {/* Intro Text & CTAs */}
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">Hi, I'm Aimaan Shergill.</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Hi, I&apos;m Aimaan Shergill.</h1>
           <p className="text-lg md:text-xl mb-6 text-text">
             I help businesses grow through strategy, data, and innovation.
           </p>
