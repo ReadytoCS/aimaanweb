@@ -70,7 +70,7 @@ export default function ProjectsPage() {
               <div className="font-semibold mb-1">🛠️ What I Built</div>
               <ul className="text-base leading-relaxed list-disc pl-5">
                 <li>Published 20+ research articles on M&A, healthcare, oil and gas, and investment topics</li>
-                <li>Created content for WSO’s valuation, strategy, and investing libraries</li>
+                <li>Created content for WSO&apos;s valuation, strategy, and investing libraries</li>
                 <li>Articles averaged 20% higher engagement than peer forums</li>
               </ul>
             </div>
@@ -120,7 +120,7 @@ export default function ProjectsPage() {
               <ul className="text-base leading-relaxed list-disc pl-5">
                 <li>Researched Alberta’s carbon pricing framework and its impact on renewable investment and emissions reduction</li>
                 <li>Completed the <a href='https://studentenergy.org/fellowship-tiers-of-engagement/' target='_blank' rel='noopener noreferrer' className='underline hover:text-blue-700'>Student Energy Tier 1 Fellowship</a>, contributing to global projects on energy equity and access</li>
-                <li>Conducted Master's level thesis on the feasibility of Small Modular Reactors (SMRs) in South Asia, focused on deployment potential in dense, underserved regions</li>
+                <li>Conducted Master&apos;s level thesis on the feasibility of Small Modular Reactors (SMRs) in South Asia, focused on deployment potential in dense, underserved regions</li>
               </ul>
             </div>
             <div className="flex flex-wrap gap-2 mt-auto pt-2">
