@@ -66,9 +66,11 @@ export default function BlogPage() {
   const [selectedPost, setSelectedPost] = useState<null | 'narayana' | 'taobao' | 'mpesa' | 'zipline' | 'grameen'>(null);
   const [activeFilter, setActiveFilter] = useState('all');
 
+  const sortedPosts = [...POSTS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
   const filteredPosts = activeFilter === 'all'
-    ? POSTS
-    : POSTS.filter(post => post.category === activeFilter);
+    ? sortedPosts
+    : sortedPosts.filter(post => post.category === activeFilter);
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-10 flex flex-col gap-10">
