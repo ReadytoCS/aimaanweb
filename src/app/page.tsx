@@ -69,7 +69,7 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {/* Blog Post Card 1 */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col gap-2">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col gap-2 dark:text-gray-100">
             <Image
               src="/stock/narayana-health.jpg"
               alt="Narayana Health"
@@ -82,7 +82,7 @@ export default function Home() {
             <button className="text-accent hover:underline text-sm mt-auto" onClick={() => setSelectedPost('narayana')}>Read more</button>
           </div>
           {/* Blog Post Card 2 */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col gap-2">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col gap-2 dark:text-gray-100">
             <Image
               src="/stock/taobao-village.jpg"
               alt="Tao Bao Villages"
@@ -95,7 +95,7 @@ export default function Home() {
             <button className="text-accent hover:underline text-sm mt-auto" onClick={() => setSelectedPost('taobao')}>Read more</button>
           </div>
           {/* Blog Post Card 3 */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col gap-2">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col gap-2 dark:text-gray-100">
             <Image
               src="/stock/mpesa.jpg"
               alt="M-Pesa"
@@ -119,28 +119,28 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {/* Project Card 1: Independent Consulting Projects */}
-          <Link href="/projects#consulting" className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col gap-2 cursor-pointer">
+          <Link href="/projects#consulting" className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col gap-2 cursor-pointer dark:bg-gray-900 dark:text-gray-100">
             {/* Independent Consulting Projects */}
             <h3 className="font-semibold text-lg">Independent Consulting Projects</h3>
             <p className="text-sm text-text italic">Strategy & fundraising for nonprofits</p>
             <span className="text-xs text-gray-500">Tech: MailChimp, Google Workspace, Tableau, SQL, Python, OpenAI GPT-4 API, Asana</span>
           </Link>
           {/* Project Card 2: GrainAI (Fintech for Gig Workers) */}
-          <Link href="/projects#grainai" className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col gap-2 cursor-pointer">
+          <Link href="/projects#grainai" className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col gap-2 cursor-pointer dark:bg-gray-900 dark:text-gray-100">
             {/* Gig Worker Finance Tracker */}
             <h3 className="font-semibold text-lg">GrainAI (Fintech for Gig Workers)</h3>
             <p className="text-sm text-text italic">Strategy, product design, and user research for a personal finance platform tailored to gig workers.</p>
             <span className="text-xs text-gray-500">Tech: CursorAI, Python, Google Sheets API, Lovable, OpenAI GPT-4 API</span>
           </Link>
           {/* Project Card 3: Custom Financial Sentiment GPT */}
-          <Link href="/projects#gpt" className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col gap-2 cursor-pointer">
+          <Link href="/projects#gpt" className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col gap-2 cursor-pointer dark:bg-gray-900 dark:text-gray-100">
             {/* Custom Financial Sentiment GPT */}
             <h3 className="font-semibold text-lg">Custom Financial Sentiment GPT</h3>
             <p className="text-sm text-text italic">Built GPT-based tool to assist with early-stage investment research and memo drafting.</p>
             <span className="text-xs text-gray-500">Tech: OpenAI GPT-4 API, Google Sheets API</span>
           </Link>
           {/* Project Card 4: Renewable Energy Research */}
-          <Link href="/projects#research" className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col gap-2 cursor-pointer">
+          <Link href="/projects#research" className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col gap-2 cursor-pointer dark:bg-gray-900 dark:text-gray-100">
             {/* Renewable Energy Research */}
             <h3 className="font-semibold text-lg">Renewable Energy Research</h3>
             <p className="text-sm text-text italic">Research and policy analysis on low-emission energy solutions in emerging markets.</p>

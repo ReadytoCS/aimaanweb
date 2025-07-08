@@ -23,7 +23,7 @@ export default function AboutPage() {
         <h2 className="text-3xl font-semibold mb-6">Experience</h2>
         <div className="flex flex-col gap-4">
           {/* RapidSOS */}
-          <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start">
+          <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start dark:bg-gray-900 dark:text-gray-100">
             <img src="/logos/rapidsos.jpg" alt="RapidSOS logo" className="w-16 h-16 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">RapidSOS</h3>
@@ -42,7 +42,7 @@ export default function AboutPage() {
             </div>
           </div>
           {/* Deloitte */}
-          <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start">
+          <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start dark:bg-gray-900 dark:text-gray-100">
             <img src="/logos/deloitte.jpg" alt="Deloitte logo" className="w-16 h-16 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">Deloitte</h3>
@@ -61,7 +61,7 @@ export default function AboutPage() {
             </div>
           </div>
           {/* Ontario Health */}
-          <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start">
+          <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start dark:bg-gray-900 dark:text-gray-100">
             <img src="/logos/ontariohealth.jpg" alt="Ontario Health logo" className="w-16 h-16 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">Ontario Health</h3>
@@ -80,7 +80,7 @@ export default function AboutPage() {
             </div>
           </div>
           {/* PwC Dubai */}
-          <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start">
+          <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start dark:bg-gray-900 dark:text-gray-100">
             <img src="/logos/pwc.jpg" alt="PwC Dubai logo" className="w-16 h-16 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">PwC Dubai</h3>
@@ -99,7 +99,7 @@ export default function AboutPage() {
             </div>
           </div>
           {/* Markid */}
-          <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start">
+          <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start dark:bg-gray-900 dark:text-gray-100">
             <img src="/logos/markid.png" alt="Markid logo" className="w-16 h-16 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">Markid</h3>
@@ -118,7 +118,7 @@ export default function AboutPage() {
             </div>
           </div>
           {/* Coca-Cola */}
-          <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start">
+          <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start dark:bg-gray-900 dark:text-gray-100">
             <img src="/logos/cocacola.jpg" alt="Coca-Cola logo" className="w-16 h-16 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">Coca-Cola India</h3>
@@ -144,7 +144,7 @@ export default function AboutPage() {
         <h2 className="text-3xl font-semibold mb-6">Education</h2>
         <div className="flex flex-col gap-4">
           {/* Ivey Business School */}
-          <div className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 mb-4 flex items-start">
+          <div className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 mb-4 flex items-start dark:bg-gray-800 dark:text-gray-100">
             <img src="/logos/ivey.jpg" alt="Ivey Business School logo" className="w-24 h-24 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">Western University - Ivey Business School</h3>
@@ -163,7 +163,7 @@ export default function AboutPage() {
             </div>
           </div>
           {/* University of Toronto (Rotman) */}
-          <div className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 mb-4 flex items-start">
+          <div className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 mb-4 flex items-start dark:bg-gray-800 dark:text-gray-100">
             <img src="/logos/rotman.jpg" alt="Rotman/University of Toronto logo" className="w-24 h-24 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">University of Toronto - Rotman Commerce</h3>

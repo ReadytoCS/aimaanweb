@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       <section>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 md:px-12">
           {/* Project Card 1: Independent Consulting Projects */}
-          <div id="consulting" className="bg-white dark:bg-gray-900 border-l-4 border-indigo-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+          <div id="consulting" className="bg-white dark:bg-gray-900 border-l-4 border-indigo-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col dark:text-gray-100">
             <span className="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-2 py-1 rounded-full mb-3">Consulting</span>
             <h3 className="font-bold text-lg mb-1">Independent Consulting Projects</h3>
             <p className="text-sm text-text italic mb-2">Strategy and fundraising advisory for nonprofits and retailers.</p>
@@ -38,7 +38,7 @@ export default function ProjectsPage() {
             </div>
           </div>
           {/* Project Card 2: Gig Worker Finance Tracker */}
-          <div id="grainai" className="bg-white dark:bg-gray-900 border-l-4 border-yellow-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+          <div id="grainai" className="bg-white dark:bg-gray-900 border-l-4 border-yellow-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col dark:text-gray-100">
             <span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded-full mb-3">Founder-Led Project</span>
             <h3 className="font-bold text-lg mb-1">GrainAI (Fintech for Gig Workers)</h3>
             <p className="text-sm text-text italic mb-2">Strategy, product design, and user research for a personal finance platform tailored to gig workers.</p>
@@ -61,7 +61,7 @@ export default function ProjectsPage() {
             </div>
           </div>
           {/* Project Card 2.5: WallStreetOasis – Editorial Contributor */}
-          <div className="bg-white dark:bg-gray-900 border-l-4 border-green-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+          <div className="bg-white dark:bg-gray-900 border-l-4 border-green-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col dark:text-gray-100">
             <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full mb-3">Financial Writing</span>
             <h3 className="font-bold text-lg mb-1">WallStreetOasis - Editorial</h3>
             <p className="text-sm text-text italic mb-2">Wrote articles on valuations, deal structures, and capital markets for a global finance audience.</p>
@@ -91,7 +91,7 @@ export default function ProjectsPage() {
             </div>
           </div>
           {/* Project Card 3: Custom Financial Sentiment GPT */}
-          <div id="gpt" className="bg-white dark:bg-gray-900 border-l-4 border-purple-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+          <div id="gpt" className="bg-white dark:bg-gray-900 border-l-4 border-purple-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col dark:text-gray-100">
             <span className="inline-block bg-purple-100 text-purple-800 text-xs font-semibold px-2 py-1 rounded-full mb-3">AI</span>
             <h3 className="font-bold text-lg mb-1">Custom Financial Sentiment GPT</h3>
             <p className="text-sm text-text italic mb-2">Built GPT-based tool to assist with early-stage investment research and memo drafting.</p>
@@ -110,7 +110,7 @@ export default function ProjectsPage() {
             </div>
           </div>
           {/* Project Card 4: Renewable Energy Research */}
-          <div id="research" className="bg-white dark:bg-gray-900 border-l-4 border-blue-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+          <div id="research" className="bg-white dark:bg-gray-900 border-l-4 border-blue-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col dark:text-gray-100">
             <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded-full mb-3">Research</span>
             <h3 className="font-bold text-lg mb-1">Renewable Energy Research</h3>
             <p className="text-sm text-text italic mb-2">Research and policy analysis on low-emission energy solutions in emerging markets.</p>

@@ -82,7 +82,7 @@ export default function BlogPage() {
       <section>
         <div className="grid md:grid-cols-3 gap-6">
           {filteredPosts.map(post => (
-            <div key={post.key} className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col gap-2">
+            <div key={post.key} className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col gap-2 dark:text-gray-100">
               <Image
                 src={post.image}
                 alt={post.title}
