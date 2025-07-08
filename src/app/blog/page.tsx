@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import PostModal from '../../components/PostModal';
 // import PostModal from "./PostModal"; // Uncomment when PostModal is created
+import { BlogPostKey } from '../../types/blog';
 
 const FILTERS = [
   { label: 'All', value: 'all' },
@@ -55,7 +56,7 @@ function formatDate(dateStr: string) {
 }
 
 export default function BlogPage() {
-  const [selectedPost, setSelectedPost] = useState<null | 'narayana' | 'taobao' | 'mpesa' | 'zipline'>(null);
+  const [selectedPost, setSelectedPost] = useState<null | BlogPostKey>(null);
   const [activeFilter, setActiveFilter] = useState('all');
 
   const filteredPosts = activeFilter === 'all'
@@ -102,7 +103,7 @@ export default function BlogPage() {
               <p className="text-sm text-text">{post.description}</p>
               <span className="inline-block mt-1 mb-2 px-2 py-0.5 text-xs rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-semibold">{FILTERS.find(f => f.value === post.category)?.label}</span>
               <span className="text-xs text-gray-400 dark:text-gray-400 mb-1">{formatDate(post.date)}</span>
-              <button className="text-accent hover:underline text-sm mt-auto" onClick={() => setSelectedPost(post.key as 'narayana' | 'taobao' | 'mpesa' | 'zipline')}>Read more</button>
+              <button className="text-accent hover:underline text-sm mt-auto" onClick={() => setSelectedPost(post.key as BlogPostKey)}>Read more</button>
             </div>
           ))}
         </div>
