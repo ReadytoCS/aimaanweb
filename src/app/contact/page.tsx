@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 // Contact page for Aimaan Shergill
 // Features: Contact form, social links, intro text
@@ -49,7 +50,7 @@ export default function ContactPage() {
               className="flex items-center gap-2 px-4 py-2 rounded hover:bg-accent hover:text-white transition-colors group-hover:scale-95 focus:scale-95 active:scale-90"
               title="Send"
             >
-              <img src="/logos/send.jpg" alt="Send" className="w-6 h-6 object-contain" />
+              <Image src="/logos/send.jpg" alt="Send" width={24} height={24} className="w-6 h-6 object-contain" />
               <span className="sr-only">Send</span>
             </button>
           </div>

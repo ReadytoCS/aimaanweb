@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 
 interface PostModalProps {
-  postKey: 'narayana' | 'taobao' | 'mpesa';
+  postKey: 'narayana' | 'taobao' | 'mpesa' | 'zipline';
   onClose: () => void;
 }
 
-function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa') {
+function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa' | 'zipline') {
   switch (postKey) {
     case 'narayana':
       return (
@@ -113,6 +113,44 @@ function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa') {
           <h3 className="text-lg font-semibold mt-4 mb-1">🌍 Adoption Potential</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
             Places like Pakistan, Haiti, or underserved regions facing institutional gaps where formal banking is limited or mistrusted could benefit hugely. M-Pesa&apos;s model is also a powerful blueprint for building inclusive digital public infrastructure from the ground up.
+          </p>
+        </>
+      );
+    case 'zipline':
+      return (
+        <>
+          <Image src="/stock/zipline.jpg" alt="Zipline" width={800} height={400} className="w-full rounded-md mb-4 mt-10" />
+          <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
+            <span role="img" aria-label="airplane">✈️</span> Zipline
+          </h2>
+          <div className="mb-4">
+            <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2">Case Study</span>
+            <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Logistics Innovation & Public Health</span>
+          </div>
+          <span className="text-xs text-gray-500 dark:text-gray-400 mb-2 block">July 7th, 2025</span>
+          <h3 className="text-lg font-semibold mt-4 mb-1">💡 What’s the story?</h3>
+          <p className="text-sm text-gray-700 dark:text-gray-300">
+            Zipline started in Rwanda with a big, yet simple idea: use drones to deliver life-saving medical supplies to remote areas. Think blood, vaccines, insulin—anything time-sensitive and hard to get to. Today, they’ve grown into a full-blown automated logistics network, operating in countries like Ghana, Nigeria, Kenya, and even the U.S.
+          </p>
+          <h3 className="text-lg font-semibold mt-4 mb-1">🚀 Why it’s a stand-out</h3>
+          <p className="text-sm text-gray-700 dark:text-gray-300">
+            Zipline turned a classic bottleneck like poor infrastructure into an opportunity. Where roads were unreliable, they flew over the problem. Their drone-based system cuts delivery times from hours (or days) to under 30 minutes, saving lives in emergencies and making rural healthcare more reliable.
+          </p>
+          <h3 className="text-lg font-semibold mt-4 mb-1">🛠️ Playbook Breakdown</h3>
+          <ul className="list-disc pl-6 text-sm text-gray-700 dark:text-gray-300 space-y-1">
+            <li>Focused on high-impact, hard-to-serve use cases (e.g., rural blood banks)</li>
+            <li>Partnered directly with governments and health systems</li>
+            <li>Built end-to-end logistics hubs to handle storage, packing, and autonomous delivery</li>
+            <li>Designed ultra-efficient fixed-wing drones to handle scale and distance</li>
+            <li>Now expanding into e-commerce and home delivery with precision-drop tech</li>
+          </ul>
+          <h3 className="text-lg font-semibold mt-4 mb-1">🔑 Key Learnings (Aimaan’s POV)</h3>
+          <p className="text-sm text-gray-700 dark:text-gray-300">
+            Zipline showed me that infrastructure does not always have to be physical. In places where roads cannot be fixed anytime soon, they built something better and faster. It reframed logistics for me as a layered system, not just trucks and warehouses. Because they are solving a public health problem, not just a delivery one, Zipline feels less like a tech company and more like a lifeline!
+          </p>
+          <h3 className="text-lg font-semibold mt-4 mb-1">🌍 Adoption Potential</h3>
+          <p className="text-sm text-gray-700 dark:text-gray-300">
+            High-need, hard-to-reach regions in Indonesia, the Philippines, or the Amazon basin could benefit from this model. In general, anywhere with geographic barriers and critical supply gaps is fair game. With growing applications beyond healthcare, Zipline could become the FedEx for frontier markets.
           </p>
         </>
       );

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 // About page for Aimaan Shergill
 // Sections: Career Overview, Experience Timeline, Education
@@ -24,7 +25,7 @@ export default function AboutPage() {
         <div className="flex flex-col gap-4">
           {/* RapidSOS */}
           <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start dark:bg-gray-900 dark:text-gray-100">
-            <img src="/logos/rapidsos.jpg" alt="RapidSOS logo" className="w-16 h-16 mr-6 object-contain mt-1" />
+            <Image src="/logos/rapidsos.jpg" alt="RapidSOS logo" width={64} height={64} className="w-16 h-16 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">RapidSOS</h3>
               <p className="text-base text-gray-600">Strategy & Corporate Development</p>
@@ -43,7 +44,7 @@ export default function AboutPage() {
           </div>
           {/* Deloitte */}
           <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start dark:bg-gray-900 dark:text-gray-100">
-            <img src="/logos/deloitte.jpg" alt="Deloitte logo" className="w-16 h-16 mr-6 object-contain mt-1" />
+            <Image src="/logos/deloitte.jpg" alt="Deloitte logo" width={64} height={64} className="w-16 h-16 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">Deloitte</h3>
               <p className="text-base text-gray-600">Infrastructure M&A</p>
@@ -62,7 +63,7 @@ export default function AboutPage() {
           </div>
           {/* Ontario Health */}
           <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start dark:bg-gray-900 dark:text-gray-100">
-            <img src="/logos/ontariohealth.jpg" alt="Ontario Health logo" className="w-16 h-16 mr-6 object-contain mt-1" />
+            <Image src="/logos/ontariohealth.jpg" alt="Ontario Health logo" width={64} height={64} className="w-16 h-16 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">Ontario Health</h3>
               <p className="text-base text-gray-600">Strategic Funding & Financial Modelling Intern</p>
@@ -81,7 +82,7 @@ export default function AboutPage() {
           </div>
           {/* PwC Dubai */}
           <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start dark:bg-gray-900 dark:text-gray-100">
-            <img src="/logos/pwc.jpg" alt="PwC Dubai logo" className="w-16 h-16 mr-6 object-contain mt-1" />
+            <Image src="/logos/pwc.jpg" alt="PwC Dubai logo" width={64} height={64} className="w-16 h-16 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">PwC Dubai</h3>
               <p className="text-base text-gray-600">Finance Transformation Consulting</p>
@@ -100,7 +101,7 @@ export default function AboutPage() {
           </div>
           {/* Markid */}
           <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start dark:bg-gray-900 dark:text-gray-100">
-            <img src="/logos/markid.png" alt="Markid logo" className="w-16 h-16 mr-6 object-contain mt-1" />
+            <Image src="/logos/markid.png" alt="Markid logo" width={64} height={64} className="w-16 h-16 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">Markid</h3>
               <p className="text-base text-gray-600">Strategy & Operations</p>
@@ -119,7 +120,7 @@ export default function AboutPage() {
           </div>
           {/* Coca-Cola */}
           <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex items-start dark:bg-gray-900 dark:text-gray-100">
-            <img src="/logos/cocacola.jpg" alt="Coca-Cola logo" className="w-16 h-16 mr-6 object-contain mt-1" />
+            <Image src="/logos/cocacola.jpg" alt="Coca-Cola logo" width={64} height={64} className="w-16 h-16 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">Coca-Cola India</h3>
               <p className="text-base text-gray-600">Strategy & Operations</p>
@@ -145,7 +146,7 @@ export default function AboutPage() {
         <div className="flex flex-col gap-4">
           {/* Ivey Business School */}
           <div className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 mb-4 flex items-start dark:bg-gray-800 dark:text-gray-100">
-            <img src="/logos/ivey.jpg" alt="Ivey Business School logo" className="w-24 h-24 mr-6 object-contain mt-1" />
+            <Image src="/logos/ivey.jpg" alt="Ivey Business School logo" width={96} height={96} className="w-24 h-24 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">Western University - Ivey Business School</h3>
               <p className="text-base text-gray-600">Master of Management in Analytics | London, Ontario</p>
@@ -164,7 +165,7 @@ export default function AboutPage() {
           </div>
           {/* University of Toronto (Rotman) */}
           <div className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 mb-4 flex items-start dark:bg-gray-800 dark:text-gray-100">
-            <img src="/logos/rotman.jpg" alt="Rotman/University of Toronto logo" className="w-24 h-24 mr-6 object-contain mt-1" />
+            <Image src="/logos/rotman.jpg" alt="Rotman/University of Toronto logo" width={96} height={96} className="w-24 h-24 mr-6 object-contain mt-1" />
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-gray-700">University of Toronto - Rotman Commerce</h3>
               <p className="text-base text-gray-600">Bachelor of Commerce (Finance, Economics & Data Science) | Toronto, Ontario</p>
