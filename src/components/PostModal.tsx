@@ -163,12 +163,12 @@ function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa' | 'zipline' | '
           </h2>
           <div className="mb-4">
             <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2">Case Study</span>
-            <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Finance</span>
+            <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Microfinance & Economic Empowerment</span>
           </div>
           <span className="text-xs text-gray-500 dark:text-gray-400 mb-2 block">June 18th, 2025</span>
           <h3 className="text-lg font-semibold mt-4 mb-1">💡 What’s the story?</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            Grameen Bank, founded by Nobel laureate Muhammad Yunus in Bangladesh, pioneered the concept of micro-loans for the poor—particularly for women with no credit history or collateral. By lending tiny amounts to help people start or grow small businesses, Grameen proved that the poor were not un-bankable, they were just underserved.
+            Grameen Bank, founded by Nobel laureate Muhammad Yunus in Bangladesh, pioneered the concept of micro-loans for the poor, particularly for women with no credit history or collateral. By lending tiny amounts to help people start or grow small businesses, Grameen proved that the poor were not un-bankable, they were just underserved.
           </p>
           <h3 className="text-lg font-semibold mt-4 mb-1">🚀 Why it’s innovative</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
