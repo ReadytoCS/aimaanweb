@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 
 interface PostModalProps {
-  postKey: 'narayana' | 'taobao' | 'mpesa' | 'zipline';
+  postKey: 'narayana' | 'taobao' | 'mpesa' | 'zipline' | 'grameen';
   onClose: () => void;
 }
 
-function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa' | 'zipline') {
+function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa' | 'zipline' | 'grameen') {
   switch (postKey) {
     case 'narayana':
       return (
@@ -151,6 +151,43 @@ function getPostContent(postKey: 'narayana' | 'taobao' | 'mpesa' | 'zipline') {
           <h3 className="text-lg font-semibold mt-4 mb-1">🌍 Adoption Potential</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
             High-need, hard-to-reach regions in Indonesia, the Philippines, or the Amazon basin could benefit from this model. In general, anywhere with geographic barriers and critical supply gaps is fair game. With growing applications beyond healthcare, Zipline could become the FedEx for frontier markets.
+          </p>
+        </>
+      );
+    case 'grameen':
+      return (
+        <>
+          <Image src="/stock/grameen.jpg" alt="Grameen Bank" width={800} height={400} className="w-full rounded-md mb-4 mt-10" />
+          <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
+            <span role="img" aria-label="bank">🏦</span> Grameen Bank
+          </h2>
+          <div className="mb-4">
+            <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2">Case Study</span>
+            <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Finance</span>
+          </div>
+          <span className="text-xs text-gray-500 dark:text-gray-400 mb-2 block">June 18th, 2025</span>
+          <h3 className="text-lg font-semibold mt-4 mb-1">💡 What’s the story?</h3>
+          <p className="text-sm text-gray-700 dark:text-gray-300">
+            Grameen Bank, founded by Nobel laureate Muhammad Yunus in Bangladesh, pioneered the concept of micro-loans for the poor—particularly for women with no credit history or collateral. By lending tiny amounts to help people start or grow small businesses, Grameen proved that the poor were not un-bankable, they were just underserved.
+          </p>
+          <h3 className="text-lg font-semibold mt-4 mb-1">🚀 Why it’s innovative</h3>
+          <p className="text-sm text-gray-700 dark:text-gray-300">
+            Instead of relying on credit scores or traditional collateral, Grameen built a system based on community trust and group accountability. It flipped the banking model by betting on those most excluded and in doing so, sparked a global micro-finance revolution.
+          </p>
+          <h3 className="text-lg font-semibold mt-4 mb-1">🛠️ Playbook Breakdown</h3>
+          <ul className="list-disc pl-6 text-sm text-gray-700 dark:text-gray-300 space-y-1">
+            <li>Offered small loans without collateral, often to women-led households</li>
+            <li>Used group lending circles to create built-in support and repayment incentives</li>
+            <li>Focused on income-generating activities like livestock, crafts, and farming</li>
+            <li>Reinvested profits into expanding outreach and social programs</li>
+          </ul>
+          <h3 className="text-lg font-semibold mt-4 mb-1">🔑 Key Learnings (Aimaan’s POV)</h3>
+          <p className="text-sm text-gray-700 dark:text-gray-300">
+            Grameen taught me that empowerment and finance were not mutually exclusive. By trusting borrowers and designing for their realities the model created real upward mobility. It reshaped how I think about risk, especially in emerging markets.
+          </p>
+          <h3 className="text-lg font-semibold mt-4 mb-1">🌍 Adoption Potential</h3>
+          <p className="text-sm text-gray-700 dark:text-gray-300">
+            This approach is tailor-made for rural parts of India, Sub-Saharan Africa, or Southeast Asia, where people live outside the formal credit system. With a layer of digital onboarding and mobile repayment tools, Grameen’s model could thrive in today’s fintech ecosystem, allowing people to bridge inclusion with dignity.
           </p>
         </>
       );
