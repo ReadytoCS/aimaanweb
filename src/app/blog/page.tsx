@@ -16,6 +16,14 @@ const FILTERS = [
 
 const POSTS = [
   {
+    key: 'zipline',
+    title: 'Zipline',
+    image: '/stock/zipline.jpg',
+    description: 'Drones delivering life-saving medical supplies to remote areas, transforming logistics and public health in Africa and beyond.',
+    category: 'healthcare',
+    date: '2025-07-07',
+  },
+  {
     key: 'narayana',
     title: 'Narayana Health',
     image: '/stock/narayana-health.jpg',
@@ -38,14 +46,6 @@ const POSTS = [
     description: 'Mobile money transforming financial inclusion and everyday life for millions across Africa',
     category: 'finance',
     date: '2025-06-23',
-  },
-  {
-    key: 'zipline',
-    title: 'Zipline',
-    image: '/stock/zipline.jpg',
-    description: 'Drones delivering life-saving medical supplies to remote areas, transforming logistics and public health in Africa and beyond.',
-    category: 'healthcare',
-    date: '2025-07-07',
   },
 ];
 
