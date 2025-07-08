@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 // Horizontally scrolling, infinite loop logo banner
 const logos = [
@@ -21,10 +22,12 @@ export default function LogoBanner() {
     <div className="overflow-hidden py-6 bg-white dark:bg-gray-900">
       <div className="logo-scroll-track whitespace-nowrap flex space-x-10 items-center">
         {allLogos.map((logo, idx) => (
-          <img
+          <Image
             key={idx}
             src={logo.src}
             alt={logo.alt}
+            width={120}
+            height={60}
             className={`grayscale hover:grayscale-0 transition duration-300 inline-block ${
               ["/logos/markid.png", "/logos/rotman.jpg"].includes(logo.src)
                 ? "h-20"
@@ -33,6 +36,7 @@ export default function LogoBanner() {
                 : "h-10"
             }`}
             draggable={false}
+            style={{ width: "auto", height: "auto" }}
           />
         ))}
       </div>
