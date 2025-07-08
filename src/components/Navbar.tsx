@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from "next/image";
 
 // Navbar component for Aimaan Shergill's website
 // Features: Sticky, mobile hamburger menu, easy-to-edit links
@@ -19,7 +20,8 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur border-b border-gray-200 transition-colors">
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo/Name */}
-        <Link href="/" className="font-bold text-xl tracking-tight text-accent">
+        <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight text-accent">
+          <Image src="/aimaan.png" alt="Aimaan Shergill Logo" width={32} height={32} className="rounded-full" />
           Aimaan Shergill
         </Link>
         {/* Desktop Nav Links */}
