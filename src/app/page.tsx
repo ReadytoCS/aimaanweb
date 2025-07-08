@@ -9,7 +9,7 @@ import PostModal from "../components/PostModal";
 // Homepage for Aimaan Shergill
 // Features: Hero, About, Featured Blog, Projects, Newsletter
 export default function Home() {
-  const [selectedPost, setSelectedPost] = useState<null | 'narayana' | 'taobao' | 'mpesa' | 'zipline'>(null);
+  const [selectedPost, setSelectedPost] = useState<null | 'narayana' | 'taobao' | 'mpesa'>(null);
   return (
     <main className="max-w-5xl mx-auto px-4 py-10 flex flex-col gap-16">
       {/* Hero Section */}
