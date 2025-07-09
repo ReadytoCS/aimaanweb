@@ -132,6 +132,19 @@ export default function ProjectsPage() {
               <span className="bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded">NumPy</span>
               <span className="bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded">CursorAI</span>
             </div>
+            <div className="mt-3 pt-3 border-t border-gray-200">
+              <a 
+                href="https://driver-dashboard-nntngrim9pyjt9u8pwzrpf.streamlit.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-medium text-sm"
+              >
+                🚀 Live Demo
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                </svg>
+              </a>
+            </div>
           </div>
           {/* Project Card 5: Renewable Energy Research */}
           <div id="research" className="bg-white dark:bg-gray-900 border-l-4 border-blue-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col dark:text-gray-100">
