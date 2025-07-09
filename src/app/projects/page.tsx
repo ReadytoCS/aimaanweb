@@ -109,7 +109,31 @@ export default function ProjectsPage() {
               <span className="bg-purple-100 text-purple-800 text-xs font-semibold px-2 py-1 rounded">Google Sheets API</span>
             </div>
           </div>
-          {/* Project Card 4: Renewable Energy Research */}
+          {/* Project Card 4: Driver Profitability Dashboard */}
+          <div id="driver-dashboard" className="bg-white dark:bg-gray-900 border-l-4 border-orange-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col dark:text-gray-100">
+            <span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded-full mb-3">Data Analytics</span>
+            <h3 className="font-bold text-lg mb-1">Driver Profitability Dashboard</h3>
+            <p className="text-sm text-text italic mb-2">Interactive dashboard analyzing Uber driver earnings after expenses across zones, times, and trip types.</p>
+            <div className="border-t border-gray-200 my-3" />
+            <div className="mb-2">
+              <div className="font-semibold mb-1">🛠️ What I Built</div>
+              <ul className="text-base leading-relaxed list-disc pl-5">
+                <li><span className="font-semibold">Interactive Dashboard:</span> Built a comprehensive Streamlit app that analyzes 1000+ simulated trips across 6 zones with realistic cost modeling</li>
+                <li><span className="font-semibold">Profitability Analysis:</span> Calculated driver net earnings after gas, time, and wait costs to identify truly profitable trips and zones</li>
+                <li><span className="font-semibold">Business Intelligence:</span> Created automated insights engine that identifies worst/best performing zones and generates actionable recommendations</li>
+                <li><span className="font-semibold">Interactive Visualizations:</span> Built earnings by region, time patterns, trip type comparisons, and cost breakdown charts using Plotly</li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mt-auto pt-2">
+              <span className="bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded">Python</span>
+              <span className="bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded">Streamlit</span>
+              <span className="bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded">Pandas</span>
+              <span className="bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded">Plotly</span>
+              <span className="bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded">NumPy</span>
+              <span className="bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded">CursorAI</span>
+            </div>
+          </div>
+          {/* Project Card 5: Renewable Energy Research */}
           <div id="research" className="bg-white dark:bg-gray-900 border-l-4 border-blue-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col dark:text-gray-100">
             <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded-full mb-3">Research</span>
             <h3 className="font-bold text-lg mb-1">Renewable Energy Research</h3>
