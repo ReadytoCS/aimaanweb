@@ -4,7 +4,7 @@ import "./globals.css";
 // Import Navbar component
 import Navbar from "../components/Navbar";
 import ForceLightMode from "../components/ForceLightMode";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
