@@ -7,7 +7,7 @@ import Image from "next/image";
 // Features: Contact form, social links, intro text
 export default function ContactPage() {
   return (
-    <main className="max-w-2xl mx-auto px-4 py-10 flex flex-col gap-10">
+    <main className="max-w-2xl mx-auto px-4 py-10 flex flex-col gap-10 bg-white border border-slate-200 rounded-2xl shadow-sm">
       {/* Title and Intro */}
       <section>
         <h1 className="text-3xl font-bold mb-2">Contact</h1>
@@ -17,7 +17,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form (Formspree or placeholder) */}
-      <section className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+      <section className="bg-white rounded-2xl shadow-sm p-6 border border-slate-200">
         <form
           action="https://formspree.io/f/xjkrzney"
           method="POST"

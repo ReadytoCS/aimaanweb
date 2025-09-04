@@ -84,15 +84,18 @@ export default function BlogPage() {
         </p>
         {/* Tag filtering */}
         <div className="flex flex-wrap gap-2 mb-4">
-          {FILTERS.map(f => (
-            <button
-              key={f.value}
-              className={`px-3 py-1 rounded-full border text-sm font-medium transition-colors duration-150 ${activeFilter === f.value ? 'bg-green-100 text-green-600 border-green-600' : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-green-100 hover:text-green-600 hover:border-green-600'}`}
-              onClick={() => setActiveFilter(f.value)}
-            >
-              {f.label}
-            </button>
-          ))}
+          {FILTERS.map(f => {
+            const classes = `filter-btn ${f.value} ${activeFilter === f.value ? 'active' : ''}`;
+            return (
+              <button
+                key={f.value}
+                className={classes}
+                onClick={() => setActiveFilter(f.value)}
+              >
+                {f.label}
+              </button>
+            );
+          })}
         </div>
       </section>
 
@@ -100,7 +103,7 @@ export default function BlogPage() {
       <section>
         <div className="grid md:grid-cols-3 gap-6">
           {filteredPosts.map(post => (
-            <div key={post.key} className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col gap-2 dark:text-gray-100">
+            <div key={post.key} className="bg-white text-slate-900 border border-slate-200 shadow-sm rounded-2xl p-4 flex flex-col gap-2 hover:shadow-md hover:-translate-y-0.5 transition blog-card">
               <Image
                 src={post.image}
                 alt={post.title}
@@ -110,9 +113,11 @@ export default function BlogPage() {
               />
               <h3 className="font-semibold text-lg">{post.title}</h3>
               <p className="text-sm text-text">{post.description}</p>
-              <span className="inline-block mt-1 mb-2 px-2 py-0.5 text-xs rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-semibold">{FILTERS.find(f => f.value === post.category)?.label}</span>
-              <span className="text-xs text-gray-400 dark:text-gray-400 mb-1">{formatDate(post.date)}</span>
-              <button className="text-accent hover:underline text-sm mt-auto" onClick={() => setSelectedPost(post.key as 'narayana' | 'taobao' | 'mpesa' | 'zipline' | 'grameen')}>Read more</button>
+              <div className="mt-auto pt-2 space-y-1.5">
+                <span className={`block category-label ${post.category}`}>{FILTERS.find(f => f.value === post.category)?.label}</span>
+                <span className="block text-xs text-gray-500">{formatDate(post.date)}</span>
+                <button className="block text-accent hover:underline text-sm" onClick={() => setSelectedPost(post.key as 'narayana' | 'taobao' | 'mpesa' | 'zipline' | 'grameen')}>Read more</button>
+              </div>
             </div>
           ))}
         </div>

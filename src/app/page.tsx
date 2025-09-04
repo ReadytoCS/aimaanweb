@@ -49,7 +49,7 @@ export default function Home() {
       </section>
 
       {/* About Summary */}
-      <section className="bg-gray-50 dark:bg-gray-900 rounded-xl p-6 shadow flex flex-col md:flex-row gap-6 items-center">
+      <section className="bg-transparent rounded-xl p-6 shadow flex flex-col md:flex-row gap-6 items-center">
         <div className="flex-1">
           <h2 className="text-2xl font-bold mb-2">About Me</h2>
           <p className="text-text mb-0">
@@ -69,7 +69,7 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {/* Blog Post Card 1 */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col gap-2 dark:text-gray-100">
+          <div className="bg-white text-slate-900 border border-slate-200 shadow-sm rounded-2xl p-4 flex flex-col gap-2 hover:shadow-md hover:-translate-y-0.5 transition">
             <Image
               src="/stock/narayana-health.jpg"
               alt="Narayana Health"
@@ -82,7 +82,7 @@ export default function Home() {
             <button className="text-accent hover:underline text-sm mt-auto" onClick={() => setSelectedPost('narayana')}>Read more</button>
           </div>
           {/* Blog Post Card 2 */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col gap-2 dark:text-gray-100">
+          <div className="bg-white text-slate-900 border border-slate-200 shadow-sm rounded-2xl p-4 flex flex-col gap-2 hover:shadow-md hover:-translate-y-0.5 transition">
             <Image
               src="/stock/taobao-village.jpg"
               alt="Tao Bao Villages"
@@ -95,7 +95,7 @@ export default function Home() {
             <button className="text-accent hover:underline text-sm mt-auto" onClick={() => setSelectedPost('taobao')}>Read more</button>
           </div>
           {/* Blog Post Card 3 */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col gap-2 dark:text-gray-100">
+          <div className="bg-white text-slate-900 border border-slate-200 shadow-sm rounded-2xl p-4 flex flex-col gap-2 hover:shadow-md hover:-translate-y-0.5 transition">
             <Image
               src="/stock/mpesa.jpg"
               alt="M-Pesa"
@@ -117,34 +117,59 @@ export default function Home() {
           <h2 className="text-2xl font-bold">Featured Projects</h2>
           <Link href="/projects" className="text-accent hover:underline font-medium">See all</Link>
         </div>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 auto-rows-fr">
           {/* Project Card 1: Independent Consulting Projects */}
-          <Link href="/projects#consulting" className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col gap-2 cursor-pointer dark:bg-gray-900 dark:text-gray-100">
-            {/* Independent Consulting Projects */}
-            <h3 className="font-semibold text-lg">Independent Consulting Projects</h3>
-            <p className="text-sm text-text italic">Strategy & fundraising for nonprofits</p>
-            <span className="text-xs text-gray-500">Tech: MailChimp, Google Workspace, Tableau, SQL, Python, OpenAI GPT-4 API, Asana</span>
+          <Link href="/projects#consulting" className="block bg-white text-slate-900 border border-slate-200 shadow-sm rounded-2xl p-5 hover:shadow-md transition">
+            <div className="flex flex-col h-full space-y-2">
+              <h3 className="font-semibold text-lg">Independent Consulting Projects</h3>
+              <p className="text-sm text-gray-600">Strategy & fundraising for nonprofits</p>
+              <div className="mt-auto pt-3 flex flex-wrap gap-2">
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">MailChimp</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">Google Workspace</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">Tableau</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">SQL</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">Python</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">OpenAI GPT-4 API</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">Asana</span>
+              </div>
+            </div>
           </Link>
           {/* Project Card 2: GrainAI (Fintech for Gig Workers) */}
-          <Link href="/projects#grainai" className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col gap-2 cursor-pointer dark:bg-gray-900 dark:text-gray-100">
-            {/* Gig Worker Finance Tracker */}
-            <h3 className="font-semibold text-lg">GrainAI (Fintech for Gig Workers)</h3>
-            <p className="text-sm text-text italic">Strategy, product design, and user research for a personal finance platform tailored to gig workers.</p>
-            <span className="text-xs text-gray-500">Tech: CursorAI, Python, Google Sheets API, Lovable, OpenAI GPT-4 API</span>
+          <Link href="/projects#grainai" className="block bg-white text-slate-900 border border-slate-200 shadow-sm rounded-2xl p-5 hover:shadow-md transition">
+            <div className="flex flex-col h-full space-y-2">
+              <h3 className="font-semibold text-lg">GrainAI (Fintech for Gig Workers)</h3>
+              <p className="text-sm text-gray-600">Strategy, product design, and user research for a personal finance platform tailored to gig workers.</p>
+              <div className="mt-auto pt-3 flex flex-wrap gap-2">
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">CursorAI</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">Python</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">Google Sheets API</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">Lovable</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">OpenAI GPT-4 API</span>
+              </div>
+            </div>
           </Link>
           {/* Project Card 3: Custom Financial Sentiment GPT */}
-          <Link href="/projects#gpt" className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col gap-2 cursor-pointer dark:bg-gray-900 dark:text-gray-100">
-            {/* Custom Financial Sentiment GPT */}
-            <h3 className="font-semibold text-lg">Custom Financial Sentiment GPT</h3>
-            <p className="text-sm text-text italic">Built GPT-based tool to assist with early-stage investment research and memo drafting.</p>
-            <span className="text-xs text-gray-500">Tech: OpenAI GPT-4 API, Google Sheets API</span>
+          <Link href="/projects#gpt" className="block bg-white text-slate-900 border border-slate-200 shadow-sm rounded-2xl p-5 hover:shadow-md transition">
+            <div className="flex flex-col h-full space-y-2">
+              <h3 className="font-semibold text-lg">Custom Financial Sentiment GPT</h3>
+              <p className="text-sm text-gray-600">Built GPT-based tool to assist with early-stage investment research and memo drafting.</p>
+              <div className="mt-auto pt-3 flex flex-wrap gap-2">
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">OpenAI GPT-4 API</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">Google Sheets API</span>
+              </div>
+            </div>
           </Link>
           {/* Project Card 4: Renewable Energy Research */}
-          <Link href="/projects#research" className="bg-white border rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col gap-2 cursor-pointer dark:bg-gray-900 dark:text-gray-100">
-            {/* Renewable Energy Research */}
-            <h3 className="font-semibold text-lg">Renewable Energy Research</h3>
-            <p className="text-sm text-text italic">Research and policy analysis on low-emission energy solutions in emerging markets.</p>
-            <span className="text-xs text-gray-500">Tech: Excel, Canva, Google Docs</span>
+          <Link href="/projects#research" className="block bg-white text-slate-900 border border-slate-200 shadow-sm rounded-2xl p-5 hover:shadow-md transition">
+            <div className="flex flex-col h-full space-y-2">
+              <h3 className="font-semibold text-lg">Renewable Energy Research</h3>
+              <p className="text-sm text-gray-600">Research and policy analysis on low-emission energy solutions in emerging markets.</p>
+              <div className="mt-auto pt-3 flex flex-wrap gap-2">
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">Excel</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">Canva</span>
+                <span className="text-xs px-2.5 py-1 rounded-full border border-slate-200 bg-slate-50 text-slate-600">Google Docs</span>
+              </div>
+            </div>
           </Link>
         </div>
       </section>

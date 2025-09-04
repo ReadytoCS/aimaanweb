@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Card tokens (HSL compatible for shadcn/ui) */
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
 }
 
 @theme inline {
@@ -12,11 +15,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Softer dark card tones */
+.dark {
+  --card: 215 28% 17%;
+  --card-foreground: 210 40% 98%;
 }
 
 body {
@@ -24,3 +26,73 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Projects grid and cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.project-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #EEF0F2;
+}
+.project-card h3, .project-card p, .project-card li { color: #111827; }
+.project-card ul { margin-left: 18px; }
+.project-card * { overflow-wrap: anywhere; }
+
+@media (min-width: 720px) {
+  .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 719px) {
+  .projects-grid { grid-template-columns: 1fr; }
+}
+
+/* Blog filter buttons */
+.filter-btn {
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border: 1px solid transparent;
+  color: #374151; /* slate-700 */
+  transition: all 0.2s ease-in-out;
+}
+.filter-btn:hover { filter: brightness(95%); }
+.filter-btn.active { border-width: 2px; font-weight: 600; }
+
+.filter-btn.all { background: #F3F4F6; border-color: #D1D5DB; }
+.filter-btn.ecommerce { background: #FEF3C7; border-color: #F59E0B; }
+.filter-btn.energy { background: #FFFBEB; border-color: #FBBF24; }
+.filter-btn.finance { background: #CCFBF1; border-color: #14B8A6; }
+.filter-btn.healthcare { background: #DCFCE7; border-color: #22C55E; }
+.filter-btn.technology { background: #DBEAFE; border-color: #3B82F6; }
+.filter-btn.other { background: #EDE9FE; border-color: #8B5CF6; }
+
+/* Category labels inside blog cards */
+.blog-card .category-label {
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  color: #374151;
+}
+.blog-card .category-label.all { background: #F3F4F6; border-color: #D1D5DB; }
+.blog-card .category-label.ecommerce { background: #FEF3C7; border-color: #F59E0B; }
+.blog-card .category-label.energy { background: #FFFBEB; border-color: #FBBF24; }
+.blog-card .category-label.finance { background: #CCFBF1; border-color: #14B8A6; }
+.blog-card .category-label.healthcare { background: #DCFCE7; border-color: #22C55E; }
+.blog-card .category-label.technology { background: #DBEAFE; border-color: #3B82F6; }
+.blog-card .category-label.other { background: #EDE9FE; border-color: #8B5CF6; }

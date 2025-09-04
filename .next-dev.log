@@ -1,0 +1,169 @@
+   ▲ Next.js 15.3.4 (Turbopack)
+   - Local:        http://localhost:8085
+   - Network:      http://192.168.1.66:8085
+
+ ✓ Starting...
+ ✓ Ready in 857ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1690ms
+ GET / 200 in 1889ms
+ ✓ Compiled /favicon.ico in 367ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 720ms
+ GET / 200 in 44ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 510ms
+ GET /about 200 in 545ms
+ ✓ Compiled /blog in 451ms
+ GET /blog 200 in 476ms
+ ○ Compiling /projects ...
+ ✓ Compiled /projects in 511ms
+ GET /projects 200 in 533ms
+ ✓ Compiled /contact in 443ms
+ GET /contact 200 in 461ms
+ GET / 200 in 38ms
+ GET /about 200 in 52ms
+ ✓ Compiled in 539ms
+ ✓ Compiled in 242ms
+ ✓ Compiled in 440ms
+ ✓ Compiled in 140ms
+ ✓ Compiled in 550ms
+ ✓ Compiled in 132ms
+ ✓ Compiled in 107ms
+ ✓ Compiled in 109ms
+ ✓ Compiled in 148ms
+ ✓ Compiled in 96ms
+ ✓ Compiled in 162ms
+ ✓ Compiled in 115ms
+ ✓ Compiled in 149ms
+ ✓ Compiled in 120ms
+ ✓ Compiled in 164ms
+ ✓ Compiled in 540ms
+ ✓ Compiled in 121ms
+ ✓ Compiled in 99ms
+ ✓ Compiled in 104ms
+ ✓ Compiled in 186ms
+ ✓ Compiled in 127ms
+ GET /about 200 in 316ms
+ GET / 200 in 98ms
+ GET / 200 in 297ms
+ ✓ Compiled in 811ms
+ ✓ Compiled / in 68ms
+ GET / 200 in 386ms
+ GET / 200 in 519ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 329ms
+ GET / 200 in 1761ms
+ ✓ Compiled in 1713ms
+ ✓ Compiled in 189ms
+ ✓ Compiled in 122ms
+ ✓ Compiled in 112ms
+ ✓ Compiled in 168ms
+ ✓ Compiled in 417ms
+ GET / 200 in 552ms
+ ✓ Compiled /about in 201ms
+ GET /about 200 in 341ms
+ GET / 200 in 91ms
+ ✓ Compiled in 184ms
+ ✓ Compiled in 116ms
+ ✓ Compiled in 121ms
+ ✓ Compiled in 121ms
+ ✓ Compiled in 121ms
+ ✓ Compiled in 111ms
+ ✓ Compiled in 99ms
+ GET /about 200 in 247ms
+ GET / 200 in 150ms
+ GET /about 200 in 74ms
+ ✓ Compiled /blog in 115ms
+ GET /blog 200 in 206ms
+ ✓ Compiled /contact in 52ms
+ GET /contact 200 in 123ms
+ GET /about 200 in 68ms
+ GET /blog 200 in 85ms
+ ✓ Compiled /projects in 60ms
+ GET /projects 200 in 158ms
+ ✓ Compiled in 670ms
+ ✓ Compiled in 570ms
+ GET /projects 200 in 977ms
+ GET / 200 in 132ms
+ GET /about 200 in 661ms
+ GET /blog 200 in 101ms
+ GET /projects 200 in 91ms
+ ✓ Compiled in 933ms
+ ✓ Compiled in 400ms
+ ✓ Compiled in 230ms
+ ✓ Compiled in 490ms
+ ✓ Compiled in 256ms
+ ✓ Compiled in 108ms
+ GET /projects 200 in 1040ms
+ GET /about 200 in 1644ms
+ GET / 200 in 368ms
+ ✓ Compiled in 837ms
+ ✓ Compiled in 980ms
+ GET /about 200 in 896ms
+ GET /about 200 in 53ms
+ GET /blog 200 in 162ms
+ GET /projects 200 in 41ms
+ GET /about 200 in 312ms
+ ✓ Compiled in 380ms
+ ✓ Compiled in 193ms
+ ✓ Compiled in 199ms
+ ✓ Compiled in 410ms
+ ✓ Compiled in 197ms
+ ✓ Compiled in 137ms
+ GET /projects 200 in 324ms
+ ✓ Compiled in 275ms
+ ✓ Compiled in 268ms
+ ✓ Compiled in 154ms
+ ✓ Compiled in 128ms
+ ✓ Compiled in 114ms
+ ✓ Compiled in 457ms
+ ✓ Compiled in 132ms
+ GET /blog 200 in 710ms
+ ✓ Compiled in 582ms
+ GET /blog 200 in 1072ms
+ ✓ Compiled in 566ms
+ GET /contact 200 in 278ms
+ GET /blog 200 in 466ms
+ GET / 200 in 128ms
+ GET /about 200 in 99ms
+ GET /projects 200 in 151ms
+ GET / 200 in 73ms
+ ✓ Compiled in 987ms
+ ✓ Compiled in 306ms
+ ✓ Compiled in 140ms
+ GET /about 200 in 180ms
+ GET /projects 200 in 88ms
+ GET /contact 200 in 222ms
+ GET /blog 200 in 158ms
+ ✓ Compiled in 611ms
+ GET /blog 200 in 270ms
+ ✓ Compiled in 1035ms
+ ✓ Compiled in 432ms
+ ✓ Compiled in 900ms
+ ✓ Compiled in 265ms
+ ✓ Compiled in 707ms
+ ✓ Compiled in 818ms
+ ✓ Compiled in 1501ms
+ GET / 200 in 1109ms
+ GET /about 200 in 69ms
+ GET /blog 200 in 114ms
+ GET /projects 200 in 48ms
+ GET / 200 in 41ms
+ ✓ Compiled in 880ms
+ ✓ Compiled in 172ms
+ ✓ Compiled in 879ms
+ ✓ Compiled in 149ms
+ GET /projects 200 in 287ms
+ ✓ Compiled in 1040ms
+ GET / 200 in 3531ms
+ ✓ Compiled in 777ms
+ ✓ Compiled in 545ms
+ ✓ Compiled in 475ms
+ ✓ Compiled / in 64ms
+ GET / 200 in 418ms
+ GET / 200 in 155ms
+ GET / 200 in 114ms
+ GET / 200 in 34ms
+ GET / 200 in 26ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 3.3s
+ GET /favicon.png 404 in 3469ms

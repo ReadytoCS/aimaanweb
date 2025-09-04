@@ -9,7 +9,7 @@ const config = {
   safelist: [
     'animate-scroll',
   ],
-  darkMode: 'class', // Enable class-based dark mode
+  darkMode: 'class', // class-based; no 'dark' class is applied
   theme: {
     extend: {
       fontFamily: {
